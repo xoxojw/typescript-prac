@@ -1,0 +1,11 @@
+{
+  "name": "cafe_menu_prac",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node ./dist/index.js",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  }
+}
