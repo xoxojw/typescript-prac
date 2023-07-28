@@ -8,12 +8,16 @@ interface Box {
 
 const Wrapper = styled.div`
   display: flex;
+  width: 100vw;
+  height: 100vh;
   flex-direction: column;
+  background-color: ${props => props.theme.backgroundColor};
 `
 
 // ✅<타입명>으로 props의 type 지정
 const BoxOne = styled.div<Box>`
   background-color: ${props => props.bgColor};
+  /* background-color: ${({ bgColor }) => bgColor}; */
   width: 200px;
   height: 200px;
 `
@@ -38,12 +42,12 @@ const Btn = styled.button`
 
 // ✅Attrs: 해당 styled-components에 똑같은 속성을 내려줌
 // 모든 input에 required를 반복해서 적어줄 필요 없이 한번에 설정해주기에 간편
-const Input = styled.input.attrs({ required: true })`
+const Input = styled.input.attrs({ required: true, maxLength: 10 })`
   background-color: gray;
 `
 
 // ✅애니메이션: keyframes
-const rotationAnimation = keyframes`
+export const rotationAnimation = keyframes`
   /* from {
     transform: rotate(0deg);
     border-radius: 0px;
@@ -96,6 +100,14 @@ const BoxTwo = styled.div`
   }
 `
 
+const Title = styled.h1`
+  color: ${props => props.theme.textColor};
+`
+
+const Text = styled.p`
+  color: ${props => props.theme.textColor};
+`
+
 const App = () => {
   return (
     <>
@@ -111,6 +123,11 @@ const App = () => {
           <Emoji as="p">😜</Emoji>
         </BoxTwo>
         <Emoji>🔥</Emoji>
+        <div>
+          <Title>Title</Title>
+          <Text>What is Lorem Ipsum?
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Text>
+        </div>
       </Wrapper>
     </>
   );
