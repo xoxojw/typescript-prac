@@ -1,11 +1,11 @@
 # React Router DOM v6
-1. <a href="https://github.com/xoxojw/typescript-practice/edit/main/react-router-v6/README.md#browerrouter">BrowserRouter</a>
-2. <a href="https://github.com/xoxojw/typescript-practice/edit/main/react-router-v6/README.md#createbrowserrouter">createBrowserRouter</a>
-3. <a href="https://github.com/xoxojw/typescript-practice/edit/main/react-router-v6/README.md#route">Route</a>
-4. <a href="https://github.com/xoxojw/typescript-practice/edit/main/react-router-v6/README.md#usenavigate">useNavigate</a>
-5. <a href="https://github.com/xoxojw/typescript-practice/edit/main/react-router-v6/README.md#useparams">useParams</a>
-6. <a href="https://github.com/xoxojw/typescript-practice/edit/main/react-router-v6/README.md#outlet">Outlet</a>
-7. <a href="https://github.com/xoxojw/typescript-practice/edit/main/react-router-v6/README.md#useoutletcontext">useOutletContext</a>
+1. <a href="https://github.com/xoxojw/typescript-practice/tree/main/react-router-v6#browserrouter">BrowserRouter</a>
+2. <a href="https://github.com/xoxojw/typescript-practice/tree/main/react-router-v6#createbrowserrouter">createBrowserRouter</a>
+3. <a href="https://github.com/xoxojw/typescript-practice/tree/main/react-router-v6#route">Route</a>
+4. <a href="https://github.com/xoxojw/typescript-practice/tree/main/react-router-v6#usenavigate">useNavigate</a>
+5. <a href="https://github.com/xoxojw/typescript-practice/tree/main/react-router-v6##useparams">useParams</a>
+6. <a href="https://github.com/xoxojw/typescript-practice/tree/main/react-router-v6##outlet">Outlet</a>
+7. <a href="https://github.com/xoxojw/typescript-practice/tree/main/react-router-v6##useoutletcontext">useOutletContext</a>
 
 ## BrowserRouter
 - `<BrowserRouter>`, `<Routes>`, `<Route>`를 이용하는 방법
